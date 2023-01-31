@@ -20,10 +20,13 @@ header h1 {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
+main {
+    display: flex;
+}
 .game {
     border: 5px solid black;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr  1fr;
     margin: 0px 30px;
     grid-column-gap: 80px;
     grid-row-gap: 1em;
@@ -41,5 +44,20 @@ header h1 {
     width: 15em;
 }
 
+.escolha {
+    padding: 45px;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+}
 
+.escolha h4 {
+    
+    margin-bottom: 4px;
+}
+.escolha img {
+    height: 14.75em;
+    width: 15em;
+    margin-bottom: 20px;
+}
 
