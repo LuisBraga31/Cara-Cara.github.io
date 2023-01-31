@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <h1> Cara a Cara </h1>
+    </header>
+
+    <main>
+
+        <div class = "game"> 
+            
+            <button type = "button" > <img class ="t1" src="img/Foto.jpeg" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img class ="t2" src="img/Rafa.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img class ="t1" src="img/Foto.jpeg" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img class ="t2" src="img/Rafa.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img class ="t1" src="img/Foto.jpeg" alt="" onclick="teste(this)"> </button>
+
+            <button type = "button" > <img class ="t1" src="img/Foto.jpeg" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img class ="t2" src="img/Rafa.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img class ="t1" src="img/Foto.jpeg" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img class ="t2" src="img/Rafa.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img class ="t1" src="img/Foto.jpeg" alt="" onclick="teste(this)"> </button>
+
+            <button type = "button" > <img class ="t1" src="img/Foto.jpeg" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img class ="t2" src="img/Rafa.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img class ="t1" src="img/Foto.jpeg" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img class ="t2" src="img/Rafa.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img class ="t1" src="img/Foto.jpeg" alt="" onclick="teste(this)"> </button>
+
+            <button type = "button" > <img class ="t1" src="img/Foto.jpeg" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img class ="t2" src="img/Rafa.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img class ="t1" src="img/Foto.jpeg" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img class ="t2" src="img/Rafa.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img class ="t1" src="img/Foto.jpeg" alt="" onclick="teste(this)"> </button>
+
+        </div>
+
+    </main>
+
+    <script>
+        let voltaNormal = 0;
+        function teste (element) {
+            element.style.opacity = "0%";
+            if( voltaNormal >= 1) {
+                element.style.opacity = "100%";
+                voltaNormal=0;
+            } else {
+                voltaNormal++;
+            }
+       
+        }
+    </script>
+
+
+</body>
+</html>
