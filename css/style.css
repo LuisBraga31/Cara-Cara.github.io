@@ -42,6 +42,7 @@ main {
 .game img {
     height: 14.75em;
     width: 15em;
+    opacity: 100%;
 }
 
 .escolha {
@@ -52,9 +53,9 @@ main {
 }
 
 .escolha h4 {
-    
     margin-bottom: 4px;
 }
+
 .escolha img {
     height: 14.75em;
     width: 15em;

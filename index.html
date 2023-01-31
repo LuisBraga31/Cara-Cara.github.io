@@ -41,44 +41,46 @@
         </div>
 
         <div class="escolha">
-            <img src="img/anamaria_braga.JPG" id="imagem" />
+            <img src="" id="imagem" />
             
             <div>
-                <input type="radio" id="" name="fav_language" value="" checked>
-                <label for=""> Ana Maria Braga</label><br>
+
+
+                <input type="radio" id="" name="fav_language" value="" >
+                    <label for=""> Ana Maria Braga</label><br>
                 <input type="radio" id="" name="fav_language" value="">
-                <label for=""> Casimiro </label><br>
+                    <label for=""> Casimiro </label><br>
                 <input type="radio" id="" name="fav_language" value="">
-                <label for=""> Anitta </label><br>
+                    <label for=""> Anitta </label><br>
                 <input type="radio" id="" name="fav_language" value="">
-                <label for=""> Gil do Vigor </label><br>
+                    <label for=""> Gil do Vigor </label><br>
+
+                <input type="radio" id="" name="fav_language" value="" >
+                    <label for=""> Boca Rosa</label><br>
+                <input type="radio" id="" name="fav_language" value="">
+                    <label for=""> Luan Santanta </label><br>
+                <input type="radio" id="" name="fav_language" value="">
+                    <label for=""> Ivete </label><br> 
+                <input type="radio" id="" name="fav_language" value="">
+                    <label for=""> Neymar </label><br>
 
                 <input type="radio" id="" name="fav_language" value="">
-                <label for=""> Boca Rosa</label><br>
+                    <label for=""> Iza </label><br>
                 <input type="radio" id="" name="fav_language" value="">
-                <label for=""> Luan Santanta </label><br>
+                    <label for=""> Rodrigo Faro </label><br>
                 <input type="radio" id="" name="fav_language" value="">
-                <label for=""> Ivete </label><br> 
+                    <label for=""> Larissa Manoela </label><br>
                 <input type="radio" id="" name="fav_language" value="">
-                <label for=""> Neymar </label><br>
+                    <label for=""> Silvio Santos </label><br>
 
                 <input type="radio" id="" name="fav_language" value="">
-                <label for=""> Iza </label><br>
+                    <label for=""> Maisa </label><br>
                 <input type="radio" id="" name="fav_language" value="">
-                <label for=""> Rodrigo Faro </label><br>
+                    <label for=""> Thiaguinho </label><br>
                 <input type="radio" id="" name="fav_language" value="">
-                <label for=""> Larissa Manoela </label><br>
+                    <label for=""> Tata Werneck </label><br>
                 <input type="radio" id="" name="fav_language" value="">
-                <label for=""> Silvio Santos </label><br>
-
-                <input type="radio" id="" name="fav_language" value="">
-                <label for=""> Maisa </label><br>
-                <input type="radio" id="" name="fav_language" value="">
-                <label for=""> Thiaguinho </label><br>
-                <input type="radio" id="" name="fav_language" value="">
-                <label for=""> Tata Werneck </label><br>
-                <input type="radio" id="" name="fav_language" value="">
-                <label for=""> Tiago Leifert </label><br>
+                    <label for=""> Tiago Leifert </label><br>
 
             </div>
         </div>
@@ -86,18 +88,31 @@
     </main>
 
     <script>
-        let voltaNormal = 0;
         function teste (element) {
-            element.style.opacity = "0%";
-            if( voltaNormal >= 1) {
+            
+            let verificador = element.style.opacity === "0";
+
+            if(verificador === true) {
                 element.style.opacity = "100%";
-                voltaNormal=0;
             } else {
-                voltaNormal++;
+                element.style.opacity = "0%";
             }
+             
         }
     </script>
    
+    <script type ="text/javascript">
+        
+        let image = document.getElementById('imagem');
+        let teste1 = document.getElementById('teste');
+        let images = ['img/anamaria_braga.jpg', 'img/anitta.jpg'];
 
+        /*setInterval(function() {
+            let random = Math.floor(Math.random() * 2);
+            image.src = images[random];
+            console.log(teste1.value);
+        }, 800);*/
+    </script>
+    
 </body>
 </html>
