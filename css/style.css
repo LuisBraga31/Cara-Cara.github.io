@@ -4,81 +4,121 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden !important;
+}
+
 /* HEADER */
 
 header {
-    background-color: #ebd344;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 25px;
-
+    padding: 20px;
+    background-color: #ebd344;
 }
 
-header img {
+header .logo {
     width: 200px;
-    height: 100px;
+    height: 120px;
 }
 
 /* MAIN */
 
 main {
+    width: 100%;
     display: flex;
+    justify-content: center;
     background-image: url('../img/fundo.JPG');
-    background-size: contain;
+    background-size: cover;
+
 }
 
 /* DIV - GAME */
 
 .game {
-    border: 5px solid black;
-    border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr  1fr;
-    margin: 10px 30px;
-    grid-column-gap: 80px;
-    grid-row-gap: 1em;
+    grid-row-gap: 0.5em;
+
+    margin: 15px 30px;
+    border: 10px solid black;
+    border-radius: 10px;
+    background-color: black;
 }
 
 .game button {
+    height: 25vh;
+    margin: 5px;
+    cursor: pointer;
+    border: 3px solid #ebd344;
+    border-radius: 5px;
+
     background-color: #ebd344;
     background-image: url('../img/cara.png');
     background-size: contain;
     background-position: 50%;
     background-repeat: no-repeat;
-
-    height: 15em;
-    margin: 5px;
-    cursor: pointer;
-    border: 3px solid #ebd344;
-    border-radius: 5px;
 }
 
 .game img {
-    height: 14.75em;
-    width: 15em;
+    height: 24vh;
+    width: 20em;
     opacity: 100%;
 }
+
+
+/*
+@media(max-width: 1005px){
+    
+    main {
+        flex-direction: column;
+    }
+    
+    .game {
+
+        grid-template-columns: 1fr 1fr ;
+        margin: 10px 30px;
+        grid-column-gap: 80px;
+        grid-row-gap: 1em;
+
+    }
+    .game button {
+
+    
+        height: 15em;
+        width: 5em;
+
+    }
+    .game img {
+        height: 14.55em;
+        width: 5em;
+        opacity: 100%;
+    }
+
+}*/
 
 /* DIV - ESCOLHAS */
 
 .escolha {
-    background-color: #2c0c93;
-    height: 400px;
-    margin: 10px;
-    padding: 35px;
-    border: 5px solid black;
-    border-radius: 20px;
+    width: 28vw;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20px 5px;
+    border: 5px solid black;
+    border-radius: 20px;
+    background-color: #2c0c93;
 }
 
-.escolha img {
-    height: 14.75em;
-    width: 15em;
-    margin-bottom: 20px;
+.escolha #imagem {
+    height: 30vh;
+    width: 18vw;
+    margin-bottom: 30px;
+    border: 3px solid yellow;
 }
 
 .seletor-personagem {
@@ -88,18 +128,22 @@ main {
 }
 
 .seletor-personagem h4 {
-    margin-bottom: 5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    margin-bottom: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
     font-weight: bold;
 }
 
 .seletor-personagem select {
+    width: 12vw;
+    height: 5vh;
     border-radius: 5px;
-    padding: 5px;
-    background-color: gray;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: lightgrey;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
     font-weight: bold;
+    text-align: center;
+    cursor: pointer;
 }
 
 /* FOOTER */
@@ -107,9 +151,6 @@ main {
 footer {
     width: 100%;
     background-color: #202020;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 30px;
     color: white;
 }
@@ -118,5 +159,5 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
-    font-size: 18px;
+    font-size: 20px;
 }
