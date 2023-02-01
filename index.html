@@ -41,46 +41,30 @@
         </div>
 
         <div class="escolha">
-            <img src="" id="imagem" />
+            <img src="img/anamaria_braga.JPG" id="imagem" />
             
             <div>
+                <h4> Escolha o personagem: </h4>
+                <select id="seletor" onclick="escolha()">
+                    <option> Ana Maria Braga </option>
+                    <option> Anitta </option>
+                    <option> Boca Rosa </option>
+                    <option> Casimiro </option>
+                    <option> Gil do Vigor </option>
+                    <option> Iza </option>
+                    <option> Ivete Sangalo </option>
+                    <option> Larissa Manoela </option>
+                    <option> Luan Santana </option>
+                    <option> Maisa </option>
+                    <option> Neymar </option>
+                    <option> Rodrigo Faro </option>
+                    <option> Silvio Santos </option>
+                    <option> Tata Werneck </option>
+                    <option> Thiaguinho </option>
+                    <option> Tiago Leifert </option>
 
-
-                <input type="radio" id="" name="fav_language" value="" >
-                    <label for=""> Ana Maria Braga</label><br>
-                <input type="radio" id="" name="fav_language" value="">
-                    <label for=""> Casimiro </label><br>
-                <input type="radio" id="" name="fav_language" value="">
-                    <label for=""> Anitta </label><br>
-                <input type="radio" id="" name="fav_language" value="">
-                    <label for=""> Gil do Vigor </label><br>
-
-                <input type="radio" id="" name="fav_language" value="" >
-                    <label for=""> Boca Rosa</label><br>
-                <input type="radio" id="" name="fav_language" value="">
-                    <label for=""> Luan Santanta </label><br>
-                <input type="radio" id="" name="fav_language" value="">
-                    <label for=""> Ivete </label><br> 
-                <input type="radio" id="" name="fav_language" value="">
-                    <label for=""> Neymar </label><br>
-
-                <input type="radio" id="" name="fav_language" value="">
-                    <label for=""> Iza </label><br>
-                <input type="radio" id="" name="fav_language" value="">
-                    <label for=""> Rodrigo Faro </label><br>
-                <input type="radio" id="" name="fav_language" value="">
-                    <label for=""> Larissa Manoela </label><br>
-                <input type="radio" id="" name="fav_language" value="">
-                    <label for=""> Silvio Santos </label><br>
-
-                <input type="radio" id="" name="fav_language" value="">
-                    <label for=""> Maisa </label><br>
-                <input type="radio" id="" name="fav_language" value="">
-                    <label for=""> Thiaguinho </label><br>
-                <input type="radio" id="" name="fav_language" value="">
-                    <label for=""> Tata Werneck </label><br>
-                <input type="radio" id="" name="fav_language" value="">
-                    <label for=""> Tiago Leifert </label><br>
+                </select>
+               
 
             </div>
         </div>
@@ -104,14 +88,47 @@
     <script type ="text/javascript">
         
         let image = document.getElementById('imagem');
-        let teste1 = document.getElementById('teste');
+        let seletor = document.getElementById('seletor');
         let images = ['img/anamaria_braga.jpg', 'img/anitta.jpg'];
 
-        /*setInterval(function() {
-            let random = Math.floor(Math.random() * 2);
-            image.src = images[random];
-            console.log(teste1.value);
-        }, 800);*/
+        function escolha() {
+            if(seletor.value === "Casimiro") {
+            image.src = 'img/casimiro.jpg';
+            } else if(seletor.value === "Ana Maria Braga") {
+            image.src = 'img/anamaria_braga.jpg';
+            } else if(seletor.value === "Anitta") {
+            image.src = 'img/anitta.jpg';
+            } else if(seletor.value === "Boca Rosa") {
+            image.src = 'img/boca_rosa.jpg';
+            } else if(seletor.value === "Gil do Vigor") {
+            image.src = 'img/gil.jpg';
+            } else if(seletor.value === "Ivete Sangalo") {
+            image.src = 'img/ivete.jpg';
+            } else if(seletor.value === "Iza") {
+            image.src = 'img/iza.jpg';
+            } else if(seletor.value === "Larissa Manoela") {
+            image.src = 'img/larissa_manoela.jpg';
+            } else if(seletor.value === "Luan Santana") {
+            image.src = 'img/luan.jpg';
+            } else if(seletor.value === "Maisa") {
+            image.src = 'img/maisa.jpg';
+            } else if(seletor.value === "Neymar") {
+            image.src = 'img/neymar.jpg';
+            } else if(seletor.value === "Rodrigo Faro") {
+            image.src = 'img/rodrigo.jpg';
+            } else if(seletor.value === "Silvio Santos") {
+            image.src = 'img/silvio_santos.jpg';
+            } else if(seletor.value === "Thiaguinho") {
+            image.src = 'img/thiaguinho.jpg';
+            } else if(seletor.value === "Tata Werneck") {
+            image.src = 'img/tata.jpg';
+            } else if(seletor.value === "Tiago Leifert") {
+            image.src = 'img/tiago_leifert.jpg';
+            } 
+        }
+
+
+
     </script>
     
 </body>
