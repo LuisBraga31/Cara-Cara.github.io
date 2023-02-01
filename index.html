@@ -11,7 +11,7 @@
 <body>
     
     <header>
-        <h1> Cara a Cara </h1>
+        <img src="img/cara.png" alt="">
     </header>
 
     <main>
@@ -43,7 +43,7 @@
         <div class="escolha">
             <img src="img/anamaria_braga.JPG" id="imagem" />
             
-            <div>
+            <div class="seletor-personagem">
                 <h4> Escolha o personagem: </h4>
                 <select id="seletor" onclick="escolha()">
                     <option> Ana Maria Braga </option>
@@ -65,71 +65,77 @@
 
                 </select>
                
-
             </div>
         </div>
 
     </main>
 
-    <script>
-        function teste (element) {
-            
-            let verificador = element.style.opacity === "0";
+    <footer>
 
-            if(verificador === true) {
-                element.style.opacity = "100%";
-            } else {
-                element.style.opacity = "0%";
-            }
-             
-        }
-    </script>
-   
-    <script type ="text/javascript">
-        
-        let image = document.getElementById('imagem');
-        let seletor = document.getElementById('seletor');
-        let images = ['img/anamaria_braga.jpg', 'img/anitta.jpg'];
-
-        function escolha() {
-            if(seletor.value === "Casimiro") {
-            image.src = 'img/casimiro.jpg';
-            } else if(seletor.value === "Ana Maria Braga") {
-            image.src = 'img/anamaria_braga.jpg';
-            } else if(seletor.value === "Anitta") {
-            image.src = 'img/anitta.jpg';
-            } else if(seletor.value === "Boca Rosa") {
-            image.src = 'img/boca_rosa.jpg';
-            } else if(seletor.value === "Gil do Vigor") {
-            image.src = 'img/gil.jpg';
-            } else if(seletor.value === "Ivete Sangalo") {
-            image.src = 'img/ivete.jpg';
-            } else if(seletor.value === "Iza") {
-            image.src = 'img/iza.jpg';
-            } else if(seletor.value === "Larissa Manoela") {
-            image.src = 'img/larissa_manoela.jpg';
-            } else if(seletor.value === "Luan Santana") {
-            image.src = 'img/luan.jpg';
-            } else if(seletor.value === "Maisa") {
-            image.src = 'img/maisa.jpg';
-            } else if(seletor.value === "Neymar") {
-            image.src = 'img/neymar.jpg';
-            } else if(seletor.value === "Rodrigo Faro") {
-            image.src = 'img/rodrigo.jpg';
-            } else if(seletor.value === "Silvio Santos") {
-            image.src = 'img/silvio_santos.jpg';
-            } else if(seletor.value === "Thiaguinho") {
-            image.src = 'img/thiaguinho.jpg';
-            } else if(seletor.value === "Tata Werneck") {
-            image.src = 'img/tata.jpg';
-            } else if(seletor.value === "Tiago Leifert") {
-            image.src = 'img/tiago_leifert.jpg';
-            } 
-        }
+    </footer>
 
 
-
-    </script>
     
 </body>
+
+
+    <script>
+    function teste (element) {
+        
+        let verificador = element.style.opacity === "0";
+
+        if(verificador === true) {
+            element.style.opacity = "100%";
+        } else {
+            element.style.opacity = "0%";
+        }
+         
+    }
+    </script>
+
+    
+    <script type ="text/javascript">
+    
+    let image = document.getElementById('imagem');
+    let seletor = document.getElementById('seletor');
+    let images = ['img/anamaria_braga.jpg', 'img/anitta.jpg'];
+
+    function escolha() {
+        if(seletor.value === "Casimiro") {
+        image.src = 'img/casimiro.jpg';
+        } else if(seletor.value === "Ana Maria Braga") {
+        image.src = 'img/anamaria_braga.jpg';
+        } else if(seletor.value === "Anitta") {
+        image.src = 'img/anitta.jpg';
+        } else if(seletor.value === "Boca Rosa") {
+        image.src = 'img/boca_rosa.jpg';
+        } else if(seletor.value === "Gil do Vigor") {
+        image.src = 'img/gil.jpg';
+        } else if(seletor.value === "Ivete Sangalo") {
+        image.src = 'img/ivete.jpg';
+        } else if(seletor.value === "Iza") {
+        image.src = 'img/iza.jpg';
+        } else if(seletor.value === "Larissa Manoela") {
+        image.src = 'img/larissa_manoela.jpg';
+        } else if(seletor.value === "Luan Santana") {
+        image.src = 'img/luan.jpg';
+        } else if(seletor.value === "Maisa") {
+        image.src = 'img/maisa.jpg';
+        } else if(seletor.value === "Neymar") {
+        image.src = 'img/neymar.jpg';
+        } else if(seletor.value === "Rodrigo Faro") {
+        image.src = 'img/rodrigo.jpg';
+        } else if(seletor.value === "Silvio Santos") {
+        image.src = 'img/silvio_santos.jpg';
+        } else if(seletor.value === "Thiaguinho") {
+        image.src = 'img/thiaguinho.jpg';
+        } else if(seletor.value === "Tata Werneck") {
+        image.src = 'img/tata.jpg';
+        } else if(seletor.value === "Tiago Leifert") {
+        image.src = 'img/tiago_leifert.jpg';
+        } 
+    }
+
+    </script>
+
 </html>
