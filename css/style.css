@@ -14,14 +14,16 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 20px;
-    background-color: #ebd344;
+    background-color: #ebd345;
+
 }
 
 header .logo {
-    width: 200px;
-    height: 120px;
+    width: 160px;
+    height: 100px;
+    margin-left: 10px;
 }
 
 /* MAIN */
@@ -30,8 +32,7 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-image: url('../img/fundo.JPG');
-    background-size: cover;
+    background-color: darkblue;
 
 }
 
@@ -43,9 +44,9 @@ main {
     grid-row-gap: 0.5em;
 
     margin: 15px 30px;
-    border: 10px solid black;
+    border: 5px solid black;
     border-radius: 10px;
-    background-color: black;
+    background-color: #2c0c93;
 }
 
 .game button {
@@ -63,7 +64,7 @@ main {
 }
 
 .game img {
-    height: 24vh;
+    height: 24.3vh;
     width: 13vw;
     opacity: 100%;
 }
@@ -119,9 +120,10 @@ main {
 
 footer {
     width: 100%;
-    background-color: #202020;
+    background-color: #ebd345;
     padding: 30px;
-    color: white;
+    color: black;
+    font-weight: bold;
 }
 
 .rodape {
