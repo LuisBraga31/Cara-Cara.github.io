@@ -20,26 +20,26 @@
 
         <div class = "game"> 
             
-            <button type = "button" > <img class ="t1" src="img/thiaguinho.JPG" alt="" onclick="teste(this)"> </button>
-            <button type = "button" > <img class ="t1" src="img/anamaria_braga.JPG" alt="" onclick="teste(this)"> </button>
-            <button type = "button" > <img class ="t1" src="img/anitta.JPG" alt="" onclick="teste(this)"> </button>
-            <button type = "button" > <img class ="t1" src="img/luan.JPG" alt="" onclick="teste(this)"> </button>
-            <button type = "button" > <img class ="t1" src="img/boca_rosa.JPG" alt="" onclick="teste(this)"> </button>
-            <button type = "button" > <img class ="t1" src="img/casimiro.JPG" alt="" onclick="teste(this)"> </button>
-            <button type = "button" > <img class ="t1" src="img/neymar.JPG" alt="" onclick="teste(this)"> </button>
-            <button type = "button" > <img class ="t1" src="img/ivete.JPG" alt="" onclick="teste(this)"> </button>
-            <button type = "button" > <img class ="t1" src="img/iza.JPG" alt="" onclick="teste(this)"> </button>
-            <button type = "button" > <img class ="t1" src="img/rodrigo.JPG" alt="" onclick="teste(this)"> </button>
-            <button type = "button" > <img class ="t1" src="img/larissa_manoela.JPG" alt="" onclick="teste(this)"> </button>
-            <button type = "button" > <img class ="t1" src="img/silvio_santos.JPG" alt="" onclick="teste(this)"> </button>
-            <button type = "button" > <img class ="t1" src="img/maisa.JPG" alt="" onclick="teste(this)"> </button>
-            <button type = "button" > <img class ="t1" src="img/tata.JPG" alt="" onclick="teste(this)"> </button>
-            <button type = "button" > <img class ="t1" src="img/gil.JPG" alt="" onclick="teste(this)"> </button>
-            <button type = "button" > <img class ="t1" src="img/tiago_leifert.JPG" alt="" onclick="teste(this)"> </button>
-            <button type = "button" > <img class ="t1" src="img/juliette.JPG" alt="" onclick="teste(this)"> </button>
-            <button type = "button" > <img class ="t1" src="img/marta.JPG" alt="" onclick="teste(this)"> </button>
-            <button type = "button" > <img class ="t1" src="img/felipe.JPG" alt="" onclick="teste(this)"> </button>
-            <button type = "button" > <img class ="t1" src="img/danilo.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img id = "p1" class ="ativo" src="img/thiaguinho.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img id = "p2" class ="ativo" src="img/anamaria_braga.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img id = "p3" class ="ativo" src="img/anitta.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img id = "p4" class ="ativo" src="img/luan.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img id = "p5" class ="ativo" src="img/boca_rosa.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img id = "p6" class ="ativo" src="img/casimiro.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img id = "p7" class ="ativo" src="img/neymar.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img id = "p8" class ="ativo" src="img/ivete.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img id = "p9" class ="ativo" src="img/iza.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img id = "p10" class ="ativo" src="img/rodrigo.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img id = "p11" class ="ativo" src="img/larissa_manoela.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img id = "p12" class ="ativo" src="img/silvio_santos.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img id = "p13" class ="ativo" src="img/maisa.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img id = "p14" class ="ativo" src="img/tata.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img id = "p15" class ="ativo" src="img/gil.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img id = "p16" class ="ativo" src="img/tiago_leifert.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img id = "p17" class ="ativo" src="img/juliette.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img id = "p18" class ="ativo" src="img/marta.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img id = "p19" class ="ativo" src="img/felipe.JPG" alt="" onclick="teste(this)"> </button>
+            <button type = "button" > <img id = "p20" class ="ativo" src="img/danilo.JPG" alt="" onclick="teste(this)"> </button>
 
         </div>
 
@@ -85,76 +85,8 @@
 
 </body>
 
-    <script>
-    function teste (element) {
-        
-        let verificador = element.style.opacity === "0";
+    <script src="./js/verificador.js"> </script>
 
-        if(verificador === true) {
-            element.style.opacity = "100%";
-        } else {
-            element.style.opacity = "0%";
-        }
-         
-    }
-    
-
-    </script>
-
-    <script type ="text/javascript">
-    
-    let image = document.getElementById('imagem');
-    let seletor = document.getElementById('seletor');
-    let images = ['img/anamaria_braga.jpg', 'img/anitta.jpg'];
-
-    function escolha() {
-        if(seletor.value === "Casimiro") {
-        image.src = 'img/casimiro.JPG';
-        } else if(seletor.value === "Ana Maria Braga") {
-        image.src = 'img/anamaria_braga.JPG';
-        } else if(seletor.value === "Anitta") {
-        image.src = 'img/anitta.JPG';
-        } else if(seletor.value === "Boca Rosa") {
-        image.src = 'img/boca_rosa.JPG';
-        } else if(seletor.value === "Gil do Vigor") {
-        image.src = 'img/gil.JPG';
-        } else if(seletor.value === "Ivete Sangalo") {
-        image.src = 'img/ivete.JPG';
-        } else if(seletor.value === "Iza") {
-        image.src = 'img/iza.JPG';
-        } else if(seletor.value === "Larissa Manoela") {
-        image.src = 'img/larissa_manoela.JPG';
-        } else if(seletor.value === "Luan Santana") {
-        image.src = 'img/luan.JPG';
-        } else if(seletor.value === "Maisa") {
-        image.src = 'img/maisa.JPG';
-        } else if(seletor.value === "Neymar") {
-        image.src = 'img/neymar.JPG';
-        } else if(seletor.value === "Rodrigo Faro") {
-        image.src = 'img/rodrigo.JPG';
-        } else if(seletor.value === "Silvio Santos") {
-        image.src = 'img/silvio_santos.JPG';
-        } else if(seletor.value === "Thiaguinho") {
-        image.src = 'img/thiaguinho.JPG';
-        } else if(seletor.value === "Tata Werneck") {
-        image.src = 'img/tata.JPG';
-        } else if(seletor.value === "Tiago Leifert") {
-        image.src = 'img/tiago_leifert.JPG';
-        }
-        else if(seletor.value === "Danilo Gentilli") {
-        image.src = 'img/danilo.JPG';
-        } 
-        else if(seletor.value === "Felipe Neto") {
-        image.src = 'img/felipe.JPG';
-        } 
-        else if(seletor.value === "Marta") {
-        image.src = 'img/marta.JPG';
-        } 
-        else if(seletor.value === "Juliette") {
-        image.src = 'img/juliette.JPG';
-        }  
-    }
-
-    </script>
+    <script type ="text/javascript" src="./js/escolha.js"> </script>
 
 </html>

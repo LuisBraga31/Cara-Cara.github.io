@@ -50,7 +50,7 @@ main {
 }
 
 .game button {
-    height: 25vh;
+    height: 28vh;
     margin: 5px;
     cursor: pointer;
     border: 3px solid #ebd344;
@@ -63,10 +63,19 @@ main {
     background-repeat: no-repeat;
 }
 
-.game img {
+.game img{
     height: 24.3vh;
     width: 13vw;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.ativo {
     opacity: 100%;
+}
+
+.opacidade {
+    opacity: 0%;
 }
 
 /* DIV - ESCOLHAS */
