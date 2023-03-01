@@ -67,7 +67,7 @@ main {
     height: 24.3vh;
     width: 13vw;
     margin-bottom: 20px;
-    transition: 0.5s;
+    transition: all 0.5s;
 }
 
 .ativo {
