@@ -11,9 +11,11 @@ function virarTudo() {
 
     let virar = document.querySelectorAll('.ativo');
     let desvirar = document.querySelectorAll('.opacidade');
-
+    
     for (let i = 0; i < virar.length; i++) {
         
+
+
         virar[i].classList.toggle('ativo');
         virar[i].classList.toggle('opacidade');
     
