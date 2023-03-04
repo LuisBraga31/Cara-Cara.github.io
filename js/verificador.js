@@ -8,24 +8,29 @@ function teste (element) {
 }
 
 function virarTudo() {
-
-    let virar = document.querySelectorAll('.ativo');
-    let desvirar = document.querySelectorAll('.opacidade');
     
-    for (let i = 0; i < virar.length; i++) {
-        
+    let cartas = document.querySelectorAll('.card img');
+    let armazenamento = [];
+ 
+    for (let i=0; i < cartas.length; i++) {
 
+        if(cartas[i].classList.contains('opacidade')) {
+            armazenamento.push(cartas[i].classList.contains('opacidade'));
+        } else {
+            cartas[i].classList.toggle('ativo');
+            cartas[i].classList.toggle('opacidade');
+        }
 
-        virar[i].classList.toggle('ativo');
-        virar[i].classList.toggle('opacidade');
-    
     }
 
-    for (let i = 0; i < desvirar.length; i++) {
-        
-        desvirar[i].classList.toggle('ativo');
-        desvirar[i].classList.toggle('opacidade');
+    let qtdArmazenado = armazenamento.length;
     
+    if(qtdArmazenado == 20) {
+        for(let j = 0;  j < cartas.length; j++) {
+
+            cartas[j].classList.toggle('ativo');
+            cartas[j].classList.toggle('opacidade');
+        }        
     }
 
 }
