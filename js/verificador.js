@@ -15,6 +15,7 @@ function virarTudo() {
     for (let i=0; i < cartas.length; i++) {
 
         if(cartas[i].classList.contains('opacidade')) {
+
             armazenamento.push(cartas[i].classList.contains('opacidade'));
         } else {
             cartas[i].classList.toggle('ativo');
@@ -34,3 +35,4 @@ function virarTudo() {
     }
 
 }
+

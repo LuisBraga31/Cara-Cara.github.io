@@ -34,17 +34,13 @@ function escolha() {
     image.src = 'img/cards/tata.JPG';
     } else if(seletor.value === "Tiago Leifert") {
     image.src = 'img/cards/tiago_leifert.JPG';
-    }
-    else if(seletor.value === "Danilo Gentilli") {
+    } else if(seletor.value === "Danilo Gentilli") {
     image.src = 'img/cards/danilo.JPG';
-    } 
-    else if(seletor.value === "Felipe Neto") {
+    } else if(seletor.value === "Felipe Neto") {
     image.src = 'img/cards/felipe.JPG';
-    } 
-    else if(seletor.value === "Marta") {
+    } else if(seletor.value === "Marta") {
     image.src = 'img/cards/marta.JPG';
-    } 
-    else if(seletor.value === "Juliette") {
+    } else if(seletor.value === "Juliette") {
     image.src = 'img/cards/juliette.JPG';
     }  
 }
