@@ -85,7 +85,7 @@ main {
 }
 
 .game img {
-    height: 27.55vh;
+    height: 27.6vh;
     width: 14vw;
     margin-bottom: 20px;
     transition: all 0.5s;
@@ -150,9 +150,9 @@ main {
 
 footer {
     width: 100%;
-    background-color: #ebd345;
+    background-color: rgb(35, 35, 35);
     padding: 30px;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
@@ -179,14 +179,22 @@ footer {
         grid-row-gap: 0.5em;
     }
 
+    .card {
+        height: 32vh;
+    }
+
     .game h4 {
         font-size: 14px;
         width: 35vw;
     }
 
+    .game button {
+        height: 22vh;
+    }
+
     .game img {
         width: 37vw;
-        height: 27vh;
+        height: 21vh;
     }
 
     .escolha {
