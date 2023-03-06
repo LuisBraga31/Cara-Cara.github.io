@@ -4,14 +4,14 @@ let seletor = document.getElementById('seletor');
 function escolha() {
     if(seletor.value === "Casimiro") {
     image.src = 'img/cards/casimiro.JPG';
-    } else if(seletor.value === "Ana Maria Braga") {
-    image.src = 'img/cards/anamaria_braga.JPG';
+    } else if(seletor.value === "Whindersson") {
+    image.src = 'img/cards/whindersson.JPG';
     } else if(seletor.value === "Anitta") {
     image.src = 'img/cards/anitta.JPG';
-    } else if(seletor.value === "Boca Rosa") {
-    image.src = 'img/cards/boca_rosa.JPG';
-    } else if(seletor.value === "Gil do Vigor") {
-    image.src = 'img/cards/gil.JPG';
+    } else if(seletor.value === "Ronaldinho") {
+    image.src = 'img/cards/ronaldinho.JPG';
+    } else if(seletor.value === "Ludmilla") {
+    image.src = 'img/cards/ludmilla.JPG';
     } else if(seletor.value === "Ivete Sangalo") {
     image.src = 'img/cards/ivete.JPG';
     } else if(seletor.value === "Iza") {
@@ -36,11 +36,11 @@ function escolha() {
     image.src = 'img/cards/tiago_leifert.JPG';
     } else if(seletor.value === "Danilo Gentilli") {
     image.src = 'img/cards/danilo.JPG';
-    } else if(seletor.value === "Felipe Neto") {
-    image.src = 'img/cards/felipe.JPG';
+    } else if(seletor.value === "Gisele Bündchen") {
+    image.src = 'img/cards/gisele.JPG';
     } else if(seletor.value === "Marta") {
     image.src = 'img/cards/marta.JPG';
-    } else if(seletor.value === "Juliette") {
-    image.src = 'img/cards/juliette.JPG';
+    } else if(seletor.value === "Bruna Marquezine") {
+    image.src = 'img/cards/brunamarquezine.JPG';
     }  
 }
