@@ -16,20 +16,20 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 15px;
-    background-color: #ebd345;
+    background-color: #331790;
 
 }
 
 header .logo {
-    width: 120px;
-    height: 80px;
-    margin-left: 50px;
+    width: 150px;
+    height: 90px;
+    margin-left: 80px;
 }
 
 .navbar {
     display: flex;
     gap: 180px;
-
+    margin-right: 50px;
 }
 
 .navbar > a {
@@ -37,7 +37,7 @@ header .logo {
     padding: 10px;
     font-size: 20px;
     font-weight: bolder;
-    color: #2a0a92;
+    color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
 }
